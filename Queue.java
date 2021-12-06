@@ -12,6 +12,7 @@ class Queue {
         stack1 = new Stack<Integer> ();
         stack2 = new Stack<Integer> ();
     }
+    // Push element x to the back of queue. // Time Complexity: O(1),  space complexity: O(N)
 
     // Push element x to the back of queue.
     public void enqueue(int x) {
@@ -22,6 +23,7 @@ class Queue {
         stack1.push(stack2.pop());
     }
 
+    // Removes the element from in front of queue. // Time complexity : O(1), space complexity: O(N)
     // Removes the element from in front of queue.
     public int dequeue() {
         return stack1.pop();
@@ -29,23 +31,28 @@ class Queue {
     }
     
     // Get the front element.
+    // Get the front element. // Time complexity: O(N). space complexity O(N)
+
     public int peek() {
         return stack1.peek();
        
     }
+    // Return whether the queue is empty.// Time complexity: O(1), space complexity: 0
 
     public boolean empty() {
         return stack1.isEmpty() && stack2.isEmpty();
         
     }
-
+    // Return the number of elements in queue. // Time complexity: O(1), space complexity: 0
     // Return the number of elements in queue.
+
     public int size() {
         return stack1.size()+stack2.size();
 
     }
     
     public static void main(String[] args) {
+        // System.out.println("Scanned");
         Scanner scan = new Scanner(System.in);
         Queue queue = new Queue();
         int queries = Integer.parseInt(scan.nextLine());
