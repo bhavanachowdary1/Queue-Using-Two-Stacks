@@ -13,7 +13,6 @@ class Queue {
         stack2 = new Stack<Integer> ();
     }
 
-    //jgjg
     // Push element x to the back of queue.
     public void enqueue(int x) {
         while(!stack1.isEmpty())
