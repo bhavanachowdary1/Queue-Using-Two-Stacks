@@ -31,8 +31,7 @@ class Queue {
     public int peek() {
        
     }
-    
-    // Return whether the queue is empty.
+
     public boolean empty() {
         
     }
